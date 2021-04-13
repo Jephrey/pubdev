@@ -1,2 +1,2 @@
 # pubdev
-View the lates pub.dev packages.
+View the latest pub.dev packages.
