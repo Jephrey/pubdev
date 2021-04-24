@@ -1,5 +1,6 @@
 .flutter-plugins
 .flutter-plugins-dependencies
+.idea/
 
 # See https://www.dartlang.org/guides/libraries/private-files
 

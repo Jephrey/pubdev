@@ -1,4 +1,7 @@
+import 'dart:developer';
+
 import 'package:flutter/material.dart';
+import 'dart:ui';
 
 import 'package:intl/date_symbol_data_local.dart';
 import 'package:intl/intl.dart';
@@ -15,8 +18,9 @@ import 'controllers/theme_controller.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
-  Intl.defaultLocale = 'de_DE';
-  await initializeDateFormatting('nl');
+  log(window.locale.toString());
+  Intl.defaultLocale = window.locale.languageCode;
+  await initializeDateFormatting(window.locale.countryCode);
 
   await GetStorage.init();
   Get.lazyPut<ThemeController>(() => ThemeController());

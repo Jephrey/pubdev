@@ -25,6 +25,10 @@ class DetailPage extends StatelessWidget {
             Text(
                 //'Updated: ${DateFormat('d MMMM yyyy hh:mm', Localizations.localeOf(context).languageCode).format(_date)}'),
                 'Updated: ${DateFormat().format(_date)}'),
+            InkWell(
+              child: Text('Link: ${_package.link}'),
+              onTap: () => launch(_package.link),
+            ),
             Flexible(
               child: Scrollbar(
                 child: SingleChildScrollView(

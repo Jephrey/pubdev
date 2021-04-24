@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:outline_search_bar/outline_search_bar.dart';
 import 'package:pubdev/controllers/packages_controller.dart';
-import 'package:pubdev/rss/get_pubdev.dart';
 import 'package:pubdev/widgets/package_list.dart';
 
 class HomePage extends StatelessWidget {
